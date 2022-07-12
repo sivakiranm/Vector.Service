@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <CompanyFilePath>D:\skandukuri\Projects\Tools\QuickBooks\Refuse Specialist LLC Test 2.QBW</CompanyFilePath>
+  <LogFilePath>C:\IntacctSetupInstallation</LogFilePath>
+  <!--<ServicePath>http://puenterprise.com/RefuseDataServices/</ServicePath>-->
+  <!--<ServicePath>http://localhost:51420</ServicePath>-->
+  <ServicePath>
+  </ServicePath>
+  <AsiUtilities>asi0204</AsiUtilities>
+  <RefuseAppName>RefuseSpecialistIntegrator</RefuseAppName>
+</Configuration>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B566F17-A039-4C54-8C07-CA25FF2DE830}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vector.Garage</RootNamespace>
+    <AssemblyName>Vector.Garage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.5.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Vector.Library\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <HintPath>..\Vector.Library\Interop.Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Vector.Library\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\Vector.Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Vector.Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\AccountBL.cs" />
+    <Compile Include="BusinessLayer\BaselineBL.cs" />
+    <Compile Include="BusinessLayer\ClientBL.cs" />
+    <Compile Include="BusinessLayer\ConsolidatedInvoiceBL.cs" />
+    <Compile Include="BusinessLayer\ContractsBL.cs" />
+    <Compile Include="BusinessLayer\ExceptionsBL.cs" />
+    <Compile Include="BusinessLayer\FinancialReportsBL.cs" />
+    <Compile Include="BusinessLayer\InvoiceBL.cs" />
+    <Compile Include="BusinessLayer\NegotiationsBL.cs" />
+    <Compile Include="BusinessLayer\OwnershipTransferBL.cs" />
+    <Compile Include="BusinessLayer\PayFileBL.cs" />
+    <Compile Include="BusinessLayer\PaymentFileValidationsBL.cs" />
+    <Compile Include="BusinessLayer\PaymentFileXML.cs" />
+    <Compile Include="BusinessLayer\PropertyBL.cs" />
+    <Compile Include="BusinessLayer\ReportBL.cs" />
+    <Compile Include="BusinessLayer\ServiceLevelCatalogueBL.cs" />
+    <Compile Include="BusinessLayer\ThreeSixtyDegreesBL.cs" />
+    <Compile Include="BusinessLayer\VendorBL.cs" />
+    <Compile Include="DataLayer\AccountDL.cs" />
+    <Compile Include="DataLayer\BaselineDL.cs" />
+    <Compile Include="DataLayer\ClientDL.cs" />
+    <Compile Include="DataLayer\ConsolidatedInvoiceDL.cs" />
+    <Compile Include="DataLayer\ContractsDL.cs" />
+    <Compile Include="DataLayer\ExceptionsDL.cs" />
+    <Compile Include="DataLayer\FinancialReportsDL.cs" />
+    <Compile Include="DataLayer\InvoiceDL.cs" />
+    <Compile Include="DataLayer\NegotiationsDL.cs" />
+    <Compile Include="DataLayer\OwnershipTransferDL.cs" />
+    <Compile Include="DataLayer\PayFileDL.cs" />
+    <Compile Include="DataLayer\PropertyDL.cs" />
+    <Compile Include="DataLayer\ReportDL.cs" />
+    <Compile Include="DataLayer\ServiceLevelCatalogueDL.cs" />
+    <Compile Include="DataLayer\ThreeSixtyDegreesDL.cs" />
+    <Compile Include="DataLayer\VendorDL.cs" />
+    <Compile Include="Entities\AccountEntities.cs" />
+    <Compile Include="Entities\BaselineEntities.cs" />
+    <Compile Include="Entities\ClientEntities.cs" />
+    <Compile Include="Entities\ConsolidatedInvoice.cs" />
+    <Compile Include="Entities\ContractEntities.cs" />
+    <Compile Include="Entities\ExceptionEntities.cs" />
+    <Compile Include="Entities\InvoiceEntities.cs" />
+    <Compile Include="Entities\NegotiationEntities.cs" />
+    <Compile Include="Entities\OwnershipTransferEntities.cs" />
+    <Compile Include="Entities\PayFileEntity.cs" />
+    <Compile Include="Entities\PropertyEntities.cs" />
+    <Compile Include="Entities\ReportEntity.cs" />
+    <Compile Include="Entities\SearchEntities.cs" />
+    <Compile Include="Entities\ServiceEntities.cs" />
+    <Compile Include="Entities\VendorEntites.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vector.Common\Vector.Common.csproj">
+      <Project>{6281c57c-aedb-42d5-a6cc-b63e203df9cf}</Project>
+      <Name>Vector.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ExcelDataReader">
+      <Version>3.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="ExcelDataReader.DataSet">
+      <Version>3.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13.2</Version>
+    </PackageReference>
+    <PackageReference Include="itextsharp.xmlworker">
+      <Version>5.5.13.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Office.Interop.Word">
+      <Version>15.0.4797.1003</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.Compression.ZipFile">
+      <Version>4.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

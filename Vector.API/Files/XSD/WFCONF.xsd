@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema id="XMLSchema"  xmlns="http://www.prokarma.com/WFCONF.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.prokarma.com/WFCONF.xsd" 
+            xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/WFCONF.xsd" xmlns:NS="http://www.prokarma.com/WFCONF.xsd">
+  <xsd:element name="WFACHConfirmAck">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ACHRecord" minOccurs="1" maxOccurs="unbounded">
+        </xsd:element>
+      </xsd:sequence>
+      <xsd:attribute name="CompanyID" type="xsd:string" use="required" />
+      <xsd:attribute name="ACHRecordCount" type="xsd:positiveInteger" use="required" />
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ACHRecord" type="ACHRecord" />
+    <xsd:complexType name="ACHRecord">
+      <xsd:sequence>
+        <xsd:element ref="PSTGENTRYAMTDB" minOccurs="1" />
+        <xsd:element ref="PSTGENTRYAMTCR" minOccurs="1" />
+        <xsd:element ref="ENTRYDESC" minOccurs="1" />
+        <xsd:element ref="INDIVIDUALNBR" minOccurs="1" />
+        <xsd:element ref="SENDCOMPANYNAME" minOccurs="1" />
+        <xsd:element ref="RECEIVEDBANKID" minOccurs="1" />
+        <xsd:element ref="PRCSDTE" minOccurs="1" />
+        <xsd:element ref="PRCSTM" minOccurs="1" />
+        <xsd:element ref="ORIGINATORBANKNBR" minOccurs="1" />
+        <xsd:element ref="TRACENBR" minOccurs="1" />
+        <xsd:element ref="INDIVIDUALNME" minOccurs="1" />
+        <xsd:element ref="TRANEFCTDATE" minOccurs="1" />
+        <xsd:element ref="COMPANYNAME" minOccurs="1" />
+        <xsd:element ref="INCOMINGCURRENCY" minOccurs="1" />
+        <xsd:element ref="TYPE" minOccurs="1" />
+      </xsd:sequence>
+    </xsd:complexType>
+  
+  <xsd:element name="PSTGENTRYAMTDB" type="xsd:string" />
+  <xsd:element name="PSTGENTRYAMTCR" type="xsd:string" />
+  <xsd:element name="ENTRYDESC" type="xsd:string" />
+  <xsd:element name="INDIVIDUALNBR" type="xsd:string" />
+  <xsd:element name="SENDCOMPANYNAME" type="xsd:string" />
+  <xsd:element name="RECEIVEDBANKID" type="xsd:string" />
+  <xsd:element name="PRCSDTE" type="xsd:string" />
+  <xsd:element name="PRCSTM" type="xsd:string" />
+  <xsd:element name="ORIGINATORBANKNBR" type="xsd:string" />
+  <xsd:element name="TRACENBR" type="xsd:string" />
+  <xsd:element name="INDIVIDUALNME" type="xsd:string" />
+  <xsd:element name="TRANEFCTDATE" type="xsd:string" />
+  <xsd:element name="COMPANYNAME" type="xsd:string" />
+  <xsd:element name="INCOMINGCURRENCY" type="xsd:string" />
+  <xsd:element name="TYPE" type="xsd:string" />
+</xsd:schema>

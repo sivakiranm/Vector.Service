@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Titles>
+  <Client>
+    <Title>Accountant</Title>
+  </Client>
+  <Client>
+    <Title>Acquisition</Title>
+  </Client>
+  <Client>
+    <Title>Billing Services</Title>
+  </Client>
+  <Client>
+    <Title>3rd Party Billing Company</Title>
+  </Client>
+  <Client>
+    <Title>Corporate Executive</Title>
+  </Client>
+  <Client>
+    <Title>Owner</Title>
+  </Client>
+  <Client>
+    <Title>Purchasing</Title>
+  </Client>
+  <Property>
+    <Title>Corporate Executive</Title>
+  </Property>
+  <Property>
+    <Title>Property Accountant</Title>
+  </Property>
+  <Property>
+    <Title>Property Manager</Title>
+  </Property>
+  <Property>
+    <Title>Regional Manager</Title>
+  </Property>
+  <Property>
+    <Title>Regional Vice President</Title>
+  </Property>
+  <Haluer>
+    <Title>Broker</Title>
+  </Haluer>
+  <Haluer>
+    <Title>Customer Representative</Title>
+  </Haluer>
+  <Haluer>
+    <Title>Manager</Title>
+  </Haluer>
+  <Haluer>
+    <Title>Vice President</Title>
+  </Haluer>
+  <HaulerAll>
+    <Title>Collection Agent</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Customer Representative</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Executive</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Sales Manager</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Sales Representative</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>
+     Vice President</Title>
+  </HaulerAll>
+  <Client>
+    <Title>title</Title>
+  </Client>
+  <Client>
+    <Title>New Title</Title>
+  </Client>
+  <SalesPersonTitle>
+    <Title>Sales Person</Title>
+  </SalesPersonTitle>
+  <SalesPersonOrg>
+    <Title>Agent</Title>
+  </SalesPersonOrg>
+  <SalesPersonTitle>
+    <Title>Account Executive</Title>
+  </SalesPersonTitle>
+  <Client>
+    <Title>Corporate Contact</Title>
+  </Client>
+  <Property>
+    <Title>Property Contact</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Hauler Contact</Title>
+  </HaulerAll>
+  <Haluer>
+    <Title>tEST</Title>
+  </Haluer>
+  <SalesPersonTitle>
+    <Title>Negotiator</Title>
+  </SalesPersonTitle>
+  <SalesPersonTitle>
+    <Title>Inputter</Title>
+  </SalesPersonTitle>
+  <SalesPersonOrg>
+    <Title>RS</Title>
+  </SalesPersonOrg>
+  <Client>
+    <Title>Strategic Sourcing Director</Title>
+  </Client>
+  <Client>
+    <Title>Ancillary Services</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Sales Coordinator</Title>
+  </HaulerAll>
+  <SalesPersonTitle>
+    <Title>Vendor Manager</Title>
+  </SalesPersonTitle>
+  <HaulerAll>
+    <Title>Owner</Title>
+  </HaulerAll>
+  <Client>
+    <Title>Administrative</Title>
+  </Client>
+  <HaulerAll>
+    <Title>General Manager</Title>
+  </HaulerAll>
+  <Client>
+    <Title>RS</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Manager</Title>
+  </HaulerAll>
+  <Client>
+    <Title>updated billing email address</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Accounting</Title>
+  </HaulerAll>
+  <Property>
+    <Title>3rd Party Billing</Title>
+  </Property>
+  <Client>
+    <Title>Property Manager</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Customer service</Title>
+  </HaulerAll>
+  <Property>
+    <Title>Housekeeping</Title>
+  </Property>
+  <Property>
+    <Title>Maintenance</Title>
+  </Property>
+  <Property>
+    <Title>Admin</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Local Account manager</Title>
+  </HaulerAll>
+  <Property>
+    <Title>RS</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Account Executive</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Sales</Title>
+  </HaulerAll>
+  <Client>
+    <Title>Regional Manager</Title>
+  </Client>
+  <Client>
+    <Title>Executive Assistant</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Mr</Title>
+  </HaulerAll>
+  <Property>
+    <Title>SR Property Manager</Title>
+  </Property>
+  <HaulerAll>
+    <Title>main contact</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Local Broker Contact</Title>
+  </HaulerAll>
+  <Property>
+    <Title>PM</Title>
+  </Property>
+  <SalesPersonTitle>
+    <Title>Agent</Title>
+  </SalesPersonTitle>
+  <HaulerAll>
+    <Title>negotiation</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Waste Department</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Utility Clerk</Title>
+  </HaulerAll>
+  <Client>
+    <Title>3rd party</Title>
+  </Client>
+  <Property>
+    <Title>General Manager</Title>
+  </Property>
+  <Client>
+    <Title>VP of Acquisitions</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Sales Representative Negotiation</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Division Sales Manager</Title>
+  </HaulerAll>
+  <Haluer>
+    <Title>negotiation</Title>
+  </Haluer>
+  <Property>
+    <Title>Engineer</Title>
+  </Property>
+  <Client>
+    <Title>PM</Title>
+  </Client>
+  <Property>
+    <Title>Conservice</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Account Manager of Broker Accounts</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Sales and Retain</Title>
+  </HaulerAll>
+  <Client>
+    <Title>Account Executive</Title>
+  </Client>
+  <HaulerAll>
+    <Title>RS</Title>
+  </HaulerAll>
+  <Property>
+    <Title>Community Manager</Title>
+  </Property>
+  <Property>
+    <Title>District Manager</Title>
+  </Property>
+  <SalesPersonOrg>
+    <Title>Cydcor</Title>
+  </SalesPersonOrg>
+  <SalesPersonTitle>
+    <Title>Management</Title>
+  </SalesPersonTitle>
+  <Property>
+    <Title>Accountant</Title>
+  </Property>
+  <Property>
+    <Title>Owner</Title>
+  </Property>
+  <Property>
+    <Title>Purchasing</Title>
+  </Property>
+  <Client>
+    <Title>vp</Title>
+  </Client>
+  <Client>
+    <Title>Asset Mgr</Title>
+  </Client>
+  <Client>
+    <Title>AM</Title>
+  </Client>
+  <Client>
+    <Title>Primary contact</Title>
+  </Client>
+  <Property>
+    <Title>Billing Contact</Title>
+  </Property>
+  <Property>
+    <Title>RS Account Manager</Title>
+  </Property>
+  <Client>
+    <Title>Bank</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Vice President of Sales</Title>
+  </HaulerAll>
+  <Property>
+    <Title>AP Department</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Division Manager</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Operations Manager</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>CEO</Title>
+  </HaulerAll>
+  <Client>
+    <Title>Business Manager</Title>
+  </Client>
+  <HaulerAll>
+    <Title>General Counsel</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Rep</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Office Manager</Title>
+  </HaulerAll>
+  <Property>
+    <Title>Regional Transition Manager</Title>
+  </Property>
+  <HaulerAll>
+    <Title>President</Title>
+  </HaulerAll>
+  <Property>
+    <Title>Assistant Property Manager</Title>
+  </Property>
+  <Property>
+    <Title>Asset Manager</Title>
+  </Property>
+  <Client>
+    <Title>Transition Manager</Title>
+  </Client>
+  <Client>
+    <Title>Controller</Title>
+  </Client>
+  <Property>
+    <Title>Executive Director</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Overage requests</Title>
+  </HaulerAll>
+  <Property>
+    <Title>Assistant General Manager</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Yardi</Title>
+  </HaulerAll>
+  <SalesPersonTitle>
+    <Title>Client Relations</Title>
+  </SalesPersonTitle>
+  <Property>
+    <Title>Area Manager</Title>
+  </Property>
+  <Client>
+    <Title>Payables</Title>
+  </Client>
+  <Property>
+    <Title>Environmental Manager</Title>
+  </Property>
+  <Client>
+    <Title>Environmental Manager</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Major Account Manager</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Avid</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Billing Department</Title>
+  </HaulerAll>
+  <Client>
+    <Title>Director of Property Management</Title>
+  </Client>
+  <HaulerAll>
+    <Title>broker</Title>
+  </HaulerAll>
+  <SalesPersonTitle>
+    <Title>Billing Analyst</Title>
+  </SalesPersonTitle>
+  <Property>
+    <Title>Business Office Manager</Title>
+  </Property>
+  <Property>
+    <Title>Director of Maintence</Title>
+  </Property>
+  <Property>
+    <Title>Administrative Assistant</Title>
+  </Property>
+  <Property>
+    <Title>other</Title>
+  </Property>
+  <Client>
+    <Title>Regional Property Manager</Title>
+  </Client>
+  <Property>
+    <Title>Office Manage</Title>
+  </Property>
+  <HaulerAll>
+    <Title>District Broker Coordinator</Title>
+  </HaulerAll>
+  <Property>
+    <Title>Financial Administrator</Title>
+  </Property>
+  <Property>
+    <Title>RVP</Title>
+  </Property>
+  <Client>
+    <Title>Accounting</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Administrator</Title>
+  </HaulerAll>
+  <Property>
+    <Title>VP Portfolio Operations</Title>
+  </Property>
+  <HaulerAll>
+    <Title>Broker Management</Title>
+  </HaulerAll>
+  <HaulerAll>
+    <Title>Negotiation Contact</Title>
+  </HaulerAll>
+  <Client>
+    <Title>Sales</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Negotiations</Title>
+  </HaulerAll>
+  <SalesPersonTitle>
+    <Title>Smith</Title>
+  </SalesPersonTitle>
+  <Client>
+    <Title>President</Title>
+  </Client>
+  <Client>
+    <Title>Administrative Assistant</Title>
+  </Client>
+  <HaulerAll>
+    <Title>Operations Support</Title>
+  </HaulerAll>
+  <Property>
+    <Title>Operations</Title>
+  </Property>
+  <Client>
+    <Title>Assistant Director of Property Management</Title>
+  </Client>
+  <Client>
+    <Title>Secondary Contact</Title>
+  </Client>
+  <Client>
+    <Title>Director of Operations</Title>
+  </Client>
+</Titles>

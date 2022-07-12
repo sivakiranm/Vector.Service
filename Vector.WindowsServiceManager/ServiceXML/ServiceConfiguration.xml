@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+	<Service Name="NegotiationRevisitEmail" Status="Active">
+		<Entity>
+			<EntityId>0</EntityId>
+			<EntityType>Negotiation</EntityType>
+			<EntityName>All</EntityName>
+			<Occurrence>Daily</Occurrence>
+			<ExecutionTime>11:25</ExecutionTime>
+			<Status>Active</Status>
+		</Entity>
+	</Service>
+	<Service Name="VectorServiceManager" Status="Active">
+		<Entity>
+			<EntityId>0</EntityId>
+			<EntityType>Negotiation</EntityType>
+			<EntityName>All</EntityName>
+			<Occurrence>Daily</Occurrence>
+			<ExecutionTime>11:25</ExecutionTime>
+			<Status>Active</Status>
+		</Entity>
+	</Service>
+</Services>

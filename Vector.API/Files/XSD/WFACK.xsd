@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="WFPaymentAck">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" ref="RejectedUnknownPayment"/>
+        <xs:element minOccurs="0" ref="RejectedPaymentObligation"/>
+        <xs:element minOccurs="0" ref="AcceptedPaymentObligation"/>
+        <xs:element minOccurs="0" ref="RejectedAutoDebitCard"/>
+        <xs:element minOccurs="0" ref="AcceptedAutoDebitCard"/>
+        <xs:element minOccurs="0" ref="RejectedSDCPayment"/>
+        <xs:element minOccurs="0" ref="AcceptedSDCPayment"/>
+        <xs:element minOccurs="0" ref="RejectedWTXPayment"/>
+        <xs:element minOccurs="0" ref="AcceptedWTXPayment"/>
+        <xs:element minOccurs="0" ref="RejectedCPCPayment"/>
+        <xs:element minOccurs="0" ref="AcceptedCPCPayment"/>
+        <xs:element minOccurs="0" ref="RejectedInternationalRequestForTransfer"/>
+        <xs:element minOccurs="0" ref="AcceptedInternationalRequestForTransfer"/>
+        <xs:element minOccurs="0" ref="RejectedFXDraft"/>
+        <xs:element minOccurs="0" ref="AcceptedFXDraft"/>
+        <xs:element minOccurs="0" ref="RejectedUSDWire"/>
+        <xs:element minOccurs="0" ref="AcceptedUSDWire"/>
+        <xs:element minOccurs="0" ref="RejectedNonUSDWire"/>
+        <xs:element minOccurs="0" ref="AcceptedNonUSDWire"/>
+        <xs:element minOccurs="0" ref="RejectedIntlACH"/>
+        <xs:element minOccurs="0" ref="AcceptedIntlACH"/>
+        <xs:element minOccurs="0" ref="RejectedDomACH"/>
+        <xs:element minOccurs="0" ref="AcceptedDomACH"/>
+        <xs:element minOccurs="0" ref="RejectedARP"/>
+        <xs:element minOccurs="0" ref="AcceptedARP"/>
+        <xs:element minOccurs="0" ref="RejectedChecks"/>
+        <xs:element minOccurs="0" ref="AcceptedChecks"/>
+        <xs:element minOccurs="0" ref="RejectedTemplatedWire"/>
+        <xs:element minOccurs="0" ref="AcceptedTemplatedWire"/>
+        <xs:element minOccurs="0" ref="RejectedCEOWire"/>
+        <xs:element minOccurs="0" ref="AcceptedCEOWire"/>
+        <xs:element minOccurs="0" ref="RejectedCCERCommercialCard"/>
+        <xs:element minOccurs="0" ref="AcceptedCCERCommercialCard"/>
+        <xs:element minOccurs="0" ref="RejectedFDP"/>
+        <xs:element minOccurs="0" ref="AcceptedFDP"/>
+        <xs:element ref="PrcTime"/>
+        <xs:element ref="PrcDate"/>
+        <xs:element ref="FileDate"/>
+        <xs:element minOccurs="0" ref="FileTime"/>
+        <xs:element ref="FileControl"/>
+        <xs:element ref="FileTranCount"/>
+        <xs:element ref="FileTranTotal"/>
+        <xs:element ref="FileAcceptCount"/>
+        <xs:element ref="FileAcceptTotal"/>
+        <xs:element ref="FileRejectCount"/>
+        <xs:element ref="FileRejectTotal"/>
+      </xs:all>
+      <xs:attribute name="CompanyID" use="required" type="xs:string"/>
+      <xs:attribute name="DocumentType" use="optional" type="xs:string"/>
+      <xs:attribute name="PmtTypeACKCount" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedUnknownPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedPaymentObligation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedPaymentObligation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedAutoDebitCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedAutoDebitCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedSDCPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedSDCPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedWTXPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedWTXPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedCPCPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedCPCPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedInternationalRequestForTransfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedInternationalRequestForTransfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedFXDraft">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedFXDraft">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedUSDWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedUSDWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedNonUSDWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedNonUSDWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedIntlACH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:NMTOKEN"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedIntlACH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedDomACH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedDomACH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedARP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedARP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedChecks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedChecks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedTemplatedWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedTemplatedWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedCEOWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedCEOWire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedCCERCommercialCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedCCERCommercialCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectedFDP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptedFDP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="TranACK"/>
+        <xs:element ref="PmtTypeCount"/>
+        <xs:element ref="PmtTypeAmt"/>
+      </xs:sequence>
+      <xs:attribute name="PmtStatus" use="required" type="xs:string"/>
+      <xs:attribute name="PmtType" use="required" type="xs:string"/>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrcTime" type="xs:time"/>
+  <xs:element name="PrcDate" type="xs:date"/>
+  <xs:element name="FileDate" type="xs:string"/>
+  <xs:element name="FileTime" type="xs:string"/>
+  <xs:element name="FileControl" type="xs:string"/>
+  <xs:element name="FileTranCount" type="xs:integer"/>
+  <xs:element name="FileTranTotal" type="xs:decimal"/>
+  <xs:element name="FileAcceptCount" type="xs:integer"/>
+  <xs:element name="FileAcceptTotal" type="xs:decimal"/>
+  <xs:element name="FileRejectCount" type="xs:integer"/>
+  <xs:element name="FileRejectTotal" type="xs:decimal"/>
+  <xs:element name="TranACK">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="PmtID"/>
+        <xs:element ref="Name1"/>
+        <xs:element ref="ValueDate"/>
+        <xs:element ref="CurAmt"/>
+        <xs:element ref="CurCode"/>
+        <xs:element minOccurs="0" maxOccurs="5" ref="Error"/>
+      </xs:sequence>
+      <xs:attribute name="PrcDate" use="required" type="xs:date"/>
+      <xs:attribute name="TranNum" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PmtID" type="xs:string"/>
+  <xs:element name="Name1" type="xs:string"/>
+  <xs:element name="ValueDate" type="xs:string"/>
+  <xs:element name="CurAmt" type="xs:decimal"/>
+  <xs:element name="CurCode" type="xs:string"/>
+  <xs:element name="Error" type="xs:string"/>
+  <xs:element name="PmtTypeCount" type="xs:integer"/>
+  <xs:element name="PmtTypeAmt" type="xs:decimal"/>
+</xs:schema>
+
+

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmailTemplates>
+	<Template EGuid="913CBD68-A9EF-4A67-BD85-31F5F596E6F8" EName="TransmittingContractToHauler">
+		<Subject>Contract for {0},  {1} - {2}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+            <p>Hi,</p><br/>
+            <p>This email will serve as confirmation of rates, as detailed below, to be implemented as of @EffectiveDate@ and will continue through for months.</p>
+            <br/><p>@ServiceLevelItems@</p>
+            
+            <br/>
+           <p>@ExcludedItemsList@</p>
+            <br/>
+            <p>*** Address of Service: <u>@ServiceAddress@</u></p>
+            <p>*** Hauler Name &amp; Local Division: <u>@HaulerDetails@</u></p>
+            <p>*** Hauler Contact &amp; Phone: <u>@HaulerContact@</u></p><br/><br/>
+             
+             <p>Annual price increases are a maximum of @ApValue@% on anniversary date of the effective date.</p>
+            <p>Respond to vendormanagement@refusespecialists.com to confirm pricing.</p>
+            <p>When you receive the contract in this email or subsequently, sign it <u>immediately</u> and email it back to vendormanagement@refusespecialists.com. We will forward it to our common client for review and approval.</p>
+			<br/>
+      <!--<p>Comments : @Comments@</p>-->
+			<br/><p>Thank you<br/><br/>
+            @LoginUser@<br/>
+			@LoginUserPhone@<br/>
+            @LoginUserEmail@<br/>
+            Refuse Specialists, LLC.</p>
+            ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature>
+			<![CDATA[
+
+			 ]]>
+		</Signature>
+	</Template>
+	<Template EGuid="37CB97CC-0653-41CB-8DB7-20EE2BC31F30" EName="TransmittingContractToClient">
+		<Subject>Contract for {0},  {1} - {2}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+            <p>Hi,</p>
+            <p>Refuse Specialists has secured new pricing at <Property Name>, to be implemented as of <EffectiveDate>.  Please sign the attached contract <u><strong>immediately</strong></u> and email it back to vendormanagement@refusespecialists.com. We will forward it to your waste hauling vendor for signature.</p>
+			<p>The new pricing is as follows :</p>
+            <p><ServiceLevelItems></p>
+			<p>Hauler Name & Local Division: <u><ServiceAddress>, <HaulerDetails></u></p>
+			<p>If you have questions or would like more information please contact your Account Executive, <AM Name>, <AM Email Address>, <AM Phone>.</p>
+			<p>Comments : <Comments></p>
+			<p>Thank you<br/><br/>
+            <p>Your Trash Team at Refuse Specialists, LLC.</p>
+			</p>
+            ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature>
+			<![CDATA[
+
+			 ]]>
+		</Signature>
+	</Template>
+	<Template EGuid="24CFDFE1-9343-4B60-8A7C-1276F126CA64" EName="TransmittingContractToVector">
+		<Subject>Contract for {0},  {1} - {2}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+            <p>Hi,</p>
+            <p>Refuse Specialists has secured new pricing at <Property Name>, to be implemented as of <EffectiveDate>.  Please sign the attached contract <u><strong>immediately</strong></u> and email it back to vendormanagement@refusespecialists.com. We will forward it to your waste hauling vendor for signature.</p>
+			<p>The new pricing is as follows :</p>
+            <p><ServiceLevelItems></p>
+            <br/>
+            
+       
+      <p>
+        
+      </p>
+            
+			<p>Hauler Name & Local Division: <u><ServiceAddress>, <HaulerDetails></u></p>
+			<p>If you have questions or would like more information please contact your Account Executive, <AM Name>, <AM Email Address>, <AM Phone>.</p>
+			<p>Comments : <Comments></p>
+			<p>Thank you<br/><br/>
+            <p>Your Trash Team at Refuse Specialists, LLC.</p>
+			</p>
+            ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature>
+			<![CDATA[
+
+			 ]]>
+		</Signature>
+	</Template>
+	<Template EGuid="02756F94-812E-4FD7-AE0C-7221DFACA31A" EName="ContractStatusToNegotiatorSP">
+		<Subject>Contract {0} has been Approved</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+            <div style='background-color: #dfe5e6;'>            
+            <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'>                
+                <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                    style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                    <tr style='font-size: 14px; color: #999999;'>
+                        <td>
+                            Hello Team,
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr style='font-size: 14px; color: #999999;'>
+                        <td>
+                            Contract No:<b>{0}</b> has been updated with Status:<b>{1}</b> on <b>{2}</b>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+                <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#f7f7f7'
+                    style='margin: 0 auto;'>
+                    <tr style='font-size: 14px; color: #999999;'>
+                        <td allign='right' style='padding-left: 10px;'>
+                            <p style='color: #FFF'>
+                                <p style='color: #747474; font-size: 14px;'>
+                                    Please <a href='{3}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                        border-radius: 5px; text-decoration: none; color: #ffffff;'>Click</a> here to login into your account..
+                                </p>
+                                <br />
+                                <span style='color: #AAAAAA; font-size: 14px;'>***Please do not reply to this automated email as you wouldn’t get a response. For any clarifications or questions pertaining to this notification,please email or call the Vector Dept..</span>
+                                <br />
+                                <span style='color: #AAAAAA; font-size: 14px;'>This email is a service from Vector. Delivered
+                                    by <a href="{2}">Vector.</a></span>
+                                <br />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+            </div>
+        </div>
+            ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature>
+			<![CDATA[
+
+			 ]]>
+		</Signature>
+	</Template>
+	<Template EGuid="761AC72C-B582-4B84-A9E7-7C80BE5378CC" EName="ContractVendorRejectedEmail">
+		<Subject>Vendor Rejected Contract Id {0}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+			<div style='background-color: #dfe5e6;'> 
+			<div style='background-color: #ffffff; margin: 0 auto; width: 100%;'> 
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+						<p>Hello,</p>
+						<p>The Contract {0} was rejected by Vendor, Please review the Negotiation and push it through Approval.</p>			
+						<p>Negotiation ID - {1}</p>
+						<p>Property - {2}</p>
+						<p>Client - {3}</p>
+						<p>Vendor - {4}</p>			
+						<p>Comments : {5}</p>
+						<p>Thank,<br/>
+						 Vendor97</p>
+					</td>
+                </tr>
+				</table> 
+			</div>
+			</div>
+			</p>
+            ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature>
+			<![CDATA[
+
+			 ]]>
+		</Signature>
+	</Template>
+</EmailTemplates>

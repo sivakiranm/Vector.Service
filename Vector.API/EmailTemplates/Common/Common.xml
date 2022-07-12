@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmailTemplates>
+	<Template EGuid="C1F0FB0D-0519-4760-8169-C70A9E3F6DCC" EName="CommonEmail">
+		<Subject>{0}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'>        
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'>            
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        {0}
+                    </td>
+                </tr>
+            </table>
+          
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+	<Template EGuid="5AE54A61-CA10-4C0F-A9D2-C8036BD16ADF" EName="RequestBidEmail">
+		<Subject>{0}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'> 
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'> 
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        Hi {1},<br/><br/>
+						             Please submit a bid for this property.  The service address is {2}.
+                         The easiest way is to click the link below and fill in the pricing information.
+
+ 
+			            <br/>
+						<p style='color: #747474; font-size: 14px;'>
+                                Here is the link:  <a href='{0}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Submit Bid</a> 
+                        </p>
+			            <br/>
+						Ref:{3}
+                    </td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+	<Template EGuid="23C19850-FC37-425D-88A0-823E0941E3B8" EName="TicketStatusUpdateEmail">
+		<Subject>{0}, Ticket status update</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'>        
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'>            
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        Hello Team,
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        Ticket No:<b>{0}</b> has been updated with Status:<b>{1}</b> on <b>{2}</b> by <b>{3}</b>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#f7f7f7'
+                style='margin: 0 auto;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td allign='right' style='padding-left: 10px;'>
+                        <p style='color: #FFF'>
+                            <p style='color: #747474; font-size: 14px;'>
+                                Please <a href='{4}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Click</a> here to login into your account..
+                            </p>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>***Please do not reply to this automated email as you wouldn’t get a response. For any clarifications or questions pertaining to this notification,please email or call the Vector Dept..</span>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>This email is a service from Vector. Delivered
+                                by <a href="{2}">Vector.</a></span>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+	<Template EGuid="90D79830-747F-4BBB-96F0-F46D184718A7" EName="ClientCreationEmail">
+		<Subject>New Client creation</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'>        
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'>            
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        Hello Team,
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        New Client : <b>{0}</b> has been created on <b>{1}</b>.
+                    </td>
+                </tr>
+                 <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                     Billing Type : <b>{3}</b> 
+                    </td>
+                </tr>
+            </table>
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#f7f7f7'
+                style='margin: 0 auto;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td allign='right' style='padding-left: 10px;'>
+                        <p style='color: #FFF'>
+                            <p style='color: #747474; font-size: 14px;'>
+                                Please <a href='{2}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Click</a> here to login into your account..
+                            </p>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>***Please do not reply to this automated email as you wouldn’t get a response. For any clarifications or questions pertaining to this notification,please email or call the Vector Dept..</span>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>This email is a service from Vector. Delivered
+                                by <a href="{2}">Vector.</a></span>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+	<Template EGuid="094C307C-74CD-4D6F-A25C-9079A91019FF" EName="VendorRequestBidEmail">
+		<Subject>{0}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'> 
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'> 
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        <p>Hi {1},</p><br/>
+                        <p>Please respond as soon as possible.  As directed by our mutual client, we are excited to invite you to bid to service this property. Please enter your bid below.</p>
+                        <br/><p>@ServiceLevelItems@</p>
+                        <br/><br/>
+                        <p>*** Address of Service: <u>@ServiceAddress@</u></p>                        
+                        <br/>
+                       
+                         The easiest way is to click the link below and fill in the pricing information.
+						 
+			            <br/>
+						<p style='color: #747474; font-size: 14px;'>
+                                Here is the link:  <a href='{0}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Submit Bid</a> 
+                        </p>
+			            <br/>
+						<p>Time is of the essence so please respond As Soon As Possible. If you have any questions, please do not hesitate to contact us. we look forward to hearing from you!!.</p>
+						<br/>
+						Ref:{2}
+                    </td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+	<Template EGuid="8AD78FB8-6E23-4C08-B140-B25D81E9BFF1" EName="TicketRequestorEmail">
+		<Subject>{0}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+            <p>Hello,</p>
+            <p>We received your request, the ticket will be assigned within an hour and addressed rapidly. The ticket number is {0}.</p>
+            <p>If you have any additional information that you think will help us to assist you, please feel free to reply to this email.</p>			
+			<p>Thanks You,<br/>
+            Vector97</p>
+			
+			<br/>
+			Ref:{1}
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+  <Template EGuid="19C5772C-951F-419F-A1A3-88B753275532" EName="RequestBidEmailIndividualVendor">
+    <Subject>{0}</Subject>
+    <EmailBody IsHtml="true">
+      <![CDATA[
+      <div style='background-color: #dfe5e6;'> 
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'> 
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px;'>
+                    <td>
+                        Hi {1},<br/><br/>
+						             Please respond as soon as possible.  As directed by our mutual client, we are excited to invite you to bid to service this property. Please enter your bid below.
+ <br/> <br/> 
+ <b>Property </b>: @PropertyName@ <br/>
+ <b>Address </b> : @ServiceAddress@ <br/>
+ <br/>
+ @ServiceLevelItems@
+			            <br/>
+	                <br/>
+                  
+   Or, the easiest way is to click the link below and fill in the pricing information.
+   <br/>
+	                <br/>
+                  
+	<p style='color: #747474; font-size: 14px;'>
+                                Here is the link:  <a href='{0}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Submit Bid</a> 
+                        </p>
+ <br/> 
+Thanks, <br/>
+Sourcing Team <br/>
+Vector<sub>97</sub> <br/>
+sourcing@vector97.com <br/>
+                        
+			            <br/> 
+			            <br/>
+						Ref:{3}
+                    </td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+      ]]>
+    </EmailBody>
+    <Images>
+      <Image>
+        <Path><![CDATA[\Images\Export\Vector.png]]></Path>
+        <ContentId>companylogo</ContentId>
+      </Image>
+    </Images>
+    <Signature></Signature>
+  </Template>
+</EmailTemplates>

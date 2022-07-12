@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A51E11D5-905A-4131-971F-9F2867CA3DA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vector.Workbench</RootNamespace>
+    <AssemblyName>Vector.Workbench</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\Vector.Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Vector.Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RingCentral.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RingCentral.Net.5.9.0\lib\netstandard2.0\RingCentral.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\InboxOutboxBL.cs" />
+    <Compile Include="BusinessLayer\RingCentralBL.cs" />
+    <Compile Include="BusinessLayer\TaskbacklogArchivedBL.cs" />
+    <Compile Include="BusinessLayer\TicketsBL.cs" />
+    <Compile Include="BusinessLayer\WidgetsBL.cs" />
+    <Compile Include="BusinessLayer\WorkBenchBL.cs" />
+    <Compile Include="BusinessLayer\WorkFlowBL.cs" />
+    <Compile Include="DataLayer\InboxOutboxDL.cs" />
+    <Compile Include="DataLayer\RingCentralDL.cs" />
+    <Compile Include="DataLayer\TicketsDL.cs" />
+    <Compile Include="DataLayer\WidgetsDL.cs" />
+    <Compile Include="DataLayer\WorkBenchDL.cs" />
+    <Compile Include="DataLayer\WorkFlowDL.cs" />
+    <Compile Include="Entities\InboxOutbox.cs" />
+    <Compile Include="Entities\TaskBacklogArchived.cs" />
+    <Compile Include="Entities\TicketInfo.cs" />
+    <Compile Include="Entities\WidgetEntity.cs" />
+    <Compile Include="Entities\WorkBenchInfo.cs" />
+    <Compile Include="Entities\WorkFlowData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vector.Common\Vector.Common.csproj">
+      <Project>{6281C57C-AEDB-42D5-A6CC-B63E203DF9CF}</Project>
+      <Name>Vector.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vector.Garage\Vector.Garage.csproj">
+      <Project>{3B566F17-A039-4C54-8C07-CA25FF2DE830}</Project>
+      <Name>Vector.Garage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

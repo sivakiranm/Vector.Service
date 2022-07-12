@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmailTemplates>
+	<Template EGuid="1A90BFA4-6569-4404-BD5B-AB7FD2558F78" EName="ReOpenException">
+		<Subject>Exception Re-opened for {0} And Account # : {1}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'>        
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'>            
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+					    Hi,
+					    <br/>
+					    <br/>
+                        You are receiving this email because Exception for hauler Account # : {0} on Invoice # : {1} is re-opened.
+						<br/>
+						<br/>
+						<table cellpadding='0' cellspacing='0' width='100%' border='1' style='border-color:Black;'>
+						    <tr>
+						        <td><strong>Exception Type</strong></td>
+						        <td><strong>Exception Desc</strong></td>
+						        <td><strong>Comments</strong></td>
+						    </tr>
+						    <tr>
+						        <td>{2}</td>
+						        <td>{3}</td>
+						        <td>{4}</td>
+						    </tr>
+						</table>
+                    </td>
+                </tr>
+            </table>
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#f7f7f7'
+                style='margin: 0 auto;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td allign='right' style='padding-left: 10px;'>
+                        <p style='color: #FFF'>
+                            <p style='color: #747474; font-size: 14px;'>
+                                Please <a href='{5}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Click</a> here to login into your account..
+                            </p>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>***Please do not reply to this automated email as you wouldn’t get a response. For any clarifications or questions pertaining to this notification,please email or call the Vector Dept..</span>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>This email is a service from Vector. Delivered
+                                by <a href="{6}">Vector.</a></span>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+</EmailTemplates>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ARPayments>
+  <Columns>
+    <Column1>Customer</Column1>
+    <Column2>Date</Column2>
+    <Column3>AR Account</Column3>    
+    <Column4>ChkNo.</Column4>
+    <Column5>Payment Method</Column5>
+    <Column6>Payment Amount</Column6>
+    <Column7>Deposit To Account</Column7>
+    <Column8>Memo</Column8>
+    <Column9>Applied to Invoice Ref</Column9>
+    <Column10>Applied to Invoice Amount</Column10>
+    <Column11>Applied to Invoice Disc Account</Column11>
+    <Column12>Applied to Invoice Disc Amount</Column12>
+    <Column13>Customer Id</Column13>
+    <Column14>Currency</Column14>
+    <Column15>ExchangeRate</Column15>
+    <Column16>PaymentDate</Column16>
+  </Columns>
+</ARPayments>

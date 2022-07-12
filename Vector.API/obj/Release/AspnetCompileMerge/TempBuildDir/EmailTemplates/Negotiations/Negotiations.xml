@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmailTemplates>
+	<Template EGuid="F326402E-4A9F-4D74-80EF-7E7434EF8019" EName="InvoiceNotYetGenerated">
+		<Subject>Invoice Not yet Generated</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'>        
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'>            
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        Hi {0},
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        AR -Invoice for RefuseSpecialists is not yet generated in the Vector for the month of September.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#003050'>
+                <tr>
+                    <td>
+                        <p style='text-align: left; padding-left: 10px; color: #ffffff;'>
+                            Details
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='text-align: left; margin: 0 auto; width: 100%; padding-left: 10px;'>
+                <tr style='font-size: 11px; color: #666; height: 40px; background-color: #ffffff;'>
+                    <td style="width: 10%">
+                        <p style='margin: 0;'>
+                            Id :
+                        </p>
+                    </td>
+                    <td style="width: 20%">
+                        <p style='margin: 0;'>
+                            <b>{2}</b>
+                        </p>
+                    </td>
+                    <td style="width: 10%">
+                        <p style='margin: 0;'>
+                            Created By  :
+                        </p>
+                    </td>
+                    <td style="width: 20%">
+                        <p style='margin: 0;'>
+                            <b>{3}</b>
+                        </p>
+                    </td>
+                    <td style="width: 10%">
+                        <p style='margin: 0;'>
+                            User Email ID :
+                        </p>
+                    </td>
+                    <td style="width: 20%">
+                        <p style='margin: 0;'>
+                            <b>{4}</b>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#f7f7f7'
+                style='margin: 0 auto;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td allign='right' style='padding-left: 10px;'>
+                        <p style='color: #FFF'>
+                            <p style='color: #747474; font-size: 14px;'>
+                                Please <a href='{8}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Click</a> here to login into your account..
+                            </p>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>***Please do not reply to this automated email as you wouldn’t get a response. For any clarifications or questions pertaining to this notification,please email or call the Vector Dept..</span>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>This email is a service from EMS. Delivered
+                                by <a href="https://vectorappclientqa.azurewebsites.net/">Vector.</a></span>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+	<Template EGuid="4FADEF4C-5625-4AED-813D-72042CC5C98F" EName="NegotiationRevisitEmail">
+		<Subject>Negotation Revisit notification</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+      <div style='background-color: #dfe5e6;'>        
+        <div style='background-color: #ffffff; margin: 0 auto; width: 100%;'>            
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        Hello Team,
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+                        Negotiation : <b>{0}</b> with status : <b>{1}</b> has Revist date as <b>{2}</b>,Please follow up.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#f7f7f7'
+                style='margin: 0 auto;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td allign='right' style='padding-left: 10px;'>
+                        <p style='color: #FFF'>
+                            <p style='color: #747474; font-size: 14px;'>
+                                Please <a href='{3}' target='_blank' style='padding: 5px 10px 5px 10px; background-color: #00a1f2;
+                                    border-radius: 5px; text-decoration: none; color: #ffffff;'>Click</a> here to login into your account..
+                            </p>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>***Please do not reply to this automated email as you wouldn’t get a response. For any clarifications or questions pertaining to this notification,please email or call the Vector Dept..</span>
+                            <br />
+                            <span style='color: #AAAAAA; font-size: 14px;'>This email is a service from Vector. Delivered
+                                by <a href="{4}">Vector.</a></span>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+      ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature></Signature>
+	</Template>
+	<Template EGuid="3AA2393C-7985-46E6-8854-BC27916F5B18" EName="NegotiationPreBidRequestEmail">
+		<Subject>New Negotiation Created : {0} , {1}</Subject>
+		<EmailBody IsHtml="true">
+			<![CDATA[
+			<div style='background-color: #dfe5e6;'> 
+			<div style='background-color: #ffffff; margin: 0 auto; width: 100%;'> 
+            <table width='100%' border='0' cellpadding='5' cellspacing='1' bgcolor='#ffffff'
+                style='font-size: 11px; text-align: left; margin: 0 auto; padding-left: 10px;'>
+                <tr style='font-size: 14px; color: #999999;'>
+                    <td>
+						<p>Hello,</p>
+						<p>New Negotiation {0} has been created with below details.</p>			
+						<p>Negotiation ID - {0}</p>
+						<p>Property - {1}</p>
+						<p>Property Address - {2}</p>
+						<p>Negotiation Status - {3}</p>
+						<p>Thanks,<br/>
+						 Vendor97</p>
+					</td>
+                </tr>
+				</table> 
+			</div>
+			</div>
+			</p>
+            ]]>
+		</EmailBody>
+		<Images>
+			<Image>
+				<Path><![CDATA[\Images\Export\Vector.png]]></Path>
+				<ContentId>companylogo</ContentId>
+			</Image>
+		</Images>
+		<Signature>
+			<![CDATA[
+
+			 ]]>
+		</Signature>
+	</Template>
+</EmailTemplates>

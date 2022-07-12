@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Titles>
+  <EquipmentUnit>
+    <Title>yd</Title>
+  </EquipmentUnit>
+  <EquipmentUnit>
+    <Title>gal</Title>
+  </EquipmentUnit>
+  <EquipmentUnit>
+    <Title>Unit</Title>
+  </EquipmentUnit>
+  <EquipmentUnit>
+    <Title>Ton</Title>
+  </EquipmentUnit>
+  <EquipmentUnit>
+    <Title>RCY</Title>
+  </EquipmentUnit>
+  <EquipmentUnit>
+    <Title>Pull</Title>
+  </EquipmentUnit>
+</Titles>
